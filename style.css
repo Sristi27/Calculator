@@ -8,16 +8,16 @@ body{
 
 #calculator{
     background-color: rgb(221, 207, 186);
-    height:85vh;
+    height:90vh;
     width:49%;
     display: block;
-    margin: 30px auto;
+    margin:10px auto;
 }
-.result{
-height:25%;
+#result{
+height:30%;
 }
-.keyboard{
-height:80%;
+#keyboard{
+height:70%;
 width: 100%;
 }
 #history{
@@ -29,8 +29,8 @@ width: 100%;
 }
 #output{
     text-align: right;
-    height:20px;
-    margin:5px 25px;
+    height:40px;
+    margin:15px 25px;
     font-size: 30px;
 
 }
@@ -86,3 +86,71 @@ background-color: rgb(221, 207, 186);
       font-size: 25px;
       background-color:rgb(115, 134, 175);
   }
+ #output-text{
+      width: 60%px;
+      height:120px;
+      float: left;
+      margin-top:10px;
+ }
+ #microphone-output{
+     width:40%;
+ }
+ #microphone{
+height:50px;
+width: 50px;
+cursor: pointer;
+float: right;
+background-image:url("images.png");
+background-size: 100% 100%;
+border-radius:50%;
+margin:20px;
+position: relative;
+top:50px;
+margin-top:45px;
+}
+
+.record{
+    animation:microphone-animation 1.5s infinite;
+    
+}
+
+.tooltip{
+    width:200px;
+    font-size:13px;;
+    height: 80px;
+    position: absolute;
+    padding: 10px;
+    top:130px;
+    transform: translate(50px);
+    color:black;
+    margin-left:220px;
+    background-color:rgb(182, 181, 181);
+    border-radius: 5px;
+    visibility: hidden;
+}
+.tooltip::before{
+    left: 0;
+	margin-left: -25px;
+    content: '';
+    top:25px;
+    position: absolute;
+    border-width:15px;
+    border-style: solid;
+    border-color: transparent rgb(182, 181, 181)
+    transparent transparent;
+}
+#output-microphone:hover .tooltip{
+    visibility: visible;
+}
+ @keyframes microphone-animation{
+     0%{
+         transform:scale(0.9);
+     }
+     70%{
+         transform: scale(1);
+     }
+     100%{
+         transform: scale(0.5);
+         box-shadow: 0 0 0 10px rgba(0,148,255,0.4);
+     }
+ }

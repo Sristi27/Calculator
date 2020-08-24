@@ -11,20 +11,26 @@
 <body>
     <div id="container">
        <div id="calculator">
-           <div class="result">
-               <div id="history">
-                   <p id="history-value">
-                       9*9
-
-                   </p>
+           <div id="result">
+               <div id="output-text">
+                   <div id="history">
+                   <p id="history-value"></p>
                </div>
                <div id="output">
                    <p id="output-value">
-81
                    </p>
                </div>
+               </div>
+               <div id="output-microphone">
+                   <span id="microphone"></span>
+                   <span class="tooltip">
+                    Operations are plus, minus, multiply, divide &amp; reminder
+                    The user input format is number + operation + number<br>
+                    Eg: 2 multiply 5 will be 2 &times 5
+                   </span>
+               </div>
            </div>
-           <div class="keys">
+           <div id="keyboard">
             <button class="operator" id="clear">C</button>
             <button class="operator" id="backspace">CE</button>
             <button class="operator" id="%">%</button>
@@ -48,6 +54,7 @@
            </div>
        </div>
       </div>
+      <script src="app.js"></script>
 
 </body>
 
