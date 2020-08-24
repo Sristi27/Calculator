@@ -9,27 +9,45 @@
 </head>
 
 <body>
-    <form class="calculator" name="calc">
-        <input type="text" name="txt" class="value">
-        <span class="num clear" onclick="document.calc.txt.value=''">c</span>
-        <span class="num options" style="" onclick="document.calc.txt.value+='/'">/</span>
-        <span class="num options" style="color: rgb(84, 186, 226);" onclick="document.calc.txt.value+='*'">*</span>
-        <span class="num" onclick="document.calc.txt.value+='7'">7</span>
-        <span class="num" onclick="document.calc.txt.value+='8'">8</span>
-        <span class="num" onclick="document.calc.txt.value+='9'">9</span>
-        <span class="num options" style="color: rgb(84, 186, 226);" onclick="document.calc.txt.value+='-'">-</span>
-        <span class="num" onclick="document.calc.txt.value+='4'">4</span>
-        <span class="num" onclick="document.calc.txt.value+='5'">5</span>
-        <span class="num" onclick="document.calc.txt.value+='6'">6</span>
-        <span class="num plus options" style="color: rgb(84, 186, 226);" onclick="document.calc.txt.value+='+'">+</span>
-        <span class="num" onclick="document.calc.txt.value+='3'">3</span>
-        <span class="num" onclick="document.calc.txt.value+='2'">2</span>
-        <span class="num" onclick="document.calc.txt.value+='1'">1</span>
-        <span class="num" onclick="document.calc.txt.value+='0'">0</span>
-        <span class="num" onclick="document.calc.txt.value+='00'">00</span>
-        <span class="num" onclick="document.calc.txt.value+='.'">.</span>
-        <span class="num equal" onclick="document.calc.txt.value=eval(calc.txt.value)">=</span>
-    </form>
+    <div id="container">
+       <div id="calculator">
+           <div class="result">
+               <div id="history">
+                   <p id="history-value">
+                       9*9
+
+                   </p>
+               </div>
+               <div id="output">
+                   <p id="output-value">
+81
+                   </p>
+               </div>
+           </div>
+           <div class="keys">
+            <button class="operator" id="clear">C</button>
+            <button class="operator" id="backspace">CE</button>
+            <button class="operator" id="%">%</button>
+            <button class="operator" id="/">&#247;</button>
+            <button class="number" id="7">7</button>
+            <button class="number" id="8">8</button>
+            <button class="number" id="9">9</button>
+            <button class="operator" id="*">&times;</button>
+            <button class="number" id="4">4</button>
+            <button class="number" id="5">5</button>
+            <button class="number" id="6">6</button>
+            <button class="operator" id="-">-</button>
+            <button class="number" id="1">1</button>
+            <button class="number" id="2">2</button>
+            <button class="number" id="3">3</button>
+            <button class="operator" id="+">+</button>
+            <button class="empty" id="empty"></button>
+            <button class="number" id="0">0</button>
+            <button class="empty" id="empty"></button>
+            <button class="operator" id="=">=</button>
+           </div>
+       </div>
+      </div>
 
 </body>
 

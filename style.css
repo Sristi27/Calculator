@@ -1,69 +1,88 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins");
-*{
+body{
     margin: 0;
     padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
     box-sizing: border-box;
 }
 
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: rgb(43, 43, 82);
+#calculator{
+    background-color: rgb(221, 207, 186);
+    height:85vh;
+    width:49%;
+    display: block;
+    margin: 30px auto;
 }
-.calculator{
-    position: relative;
-     display: grid;
-    /*border: 1px solid;
-    box-shadow: 5px 10px #888888; */
+.result{
+height:25%;
 }
-.calculator .value{
-    grid-column: span 4;
-    height:100px;
+.keyboard{
+height:80%;
+width: 100%;
+}
+#history{
     text-align: right;
-    border: none;
-    outline: none;
-    padding: 10px;
-    font-size:18px;
+    font-size: 15px;
+    padding-top: 20px;
+    margin:0 25px;
+    color:rgb(132, 132, 253);
 }
-.calculator span{
-    display: grid;
-    width: 60px;
-    height: 60px;
-    background-color: white;
-    place-items: center;
-    border:1px solid rgb(90, 67, 133);
-    border-radius:3px;
-}
-
-.calculator span:hover{
-    background-color: black;
-    color: cornsilk;
-    cursor: pointer;
-}
-.calculator span:active{
-    background-color: teal;
-}
-.calculator span.clear{
-    grid-column: span 2; 
-    /* take size of 2 colss */
-    width: 120px;
-    background-color: violet;
-}
-.calculator span.plus{
-    grid-row: span 2; 
-    /* take size of 2 colss */
-    height: 120px;
-}
-.calculator span.equal{
-    background-color: rgb(112, 217, 243);
-}
-.calculator span.options:hover{
-    color: #f7f4eb;
+#output{
+    text-align: right;
+    height:20px;
+    margin:5px 25px;
+    font-size: 30px;
 
 }
+  #container{
+width: 50%;
+display: block;
+margin: 50px auto;
+  }
 
-.calculator span.options{
-    color: rgb(84, 186, 226);
-}
+  .operator,.number,.empty{
+      width: 50px;
+      height: 50px;
+      outline: 0;
+      margin: 15px;
+      float: left;
+      border-radius: 50%;
+      border-width: 0;
+      font-weight: bold;
+      font-size: 15px;
+  }
+  .number,.empty{
+background-color: rgb(221, 207, 186);
+  }
+  .number,.operator{
+      cursor: pointer;
+  }
+  .number:active,.operator:active{
+      font-size: 13px;
+
+  }
+  button:nth-child(4)
+  {
+      font-size: 25px;
+      background-color:rgb(92, 193, 252);
+  }
+  button:nth-child(8)
+  {
+      font-size: 25px;
+      background-color:rgb(253, 206, 76);
+  }
+  button:nth-child(12)
+  {
+      font-size: 25px;
+      background-color:rgb(252, 144, 210);
+  }
+  button:nth-child(16)
+  {
+      font-size: 25px;
+      background-color:rgb(247, 137, 64);
+  }
+  button:nth-child(20)
+  {
+      font-size: 25px;
+      background-color:rgb(115, 134, 175);
+  }
