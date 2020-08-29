@@ -159,14 +159,15 @@ margin-top:45px;
         width:100vw;
         height:70vh;
         display: block;
-        padding:5px;
         margin:0;
           }
 
    #calculator{
             height:88vh;
             width:65%;
+            
             margin:20px auto;
+            overflow: hidden;
 
         }
     
